@@ -28,7 +28,7 @@
 -->
 
 
-An assortment of lecture notes and exams from Northeastern University's GE1501 & GE1502 (Fall 2022)
+An assortment of lecture notes and exams from Northeastern University's MATH2321 (Fall 2022)
 <br/> <br/> 
 Open sourced **LaTeX** Templates [here](https://www.latextemplates.com/).
 <br/>
