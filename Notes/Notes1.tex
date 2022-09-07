@@ -1,8 +1,8 @@
 \include{Includes.tex}
 
-\title{Notes Template}
+\title{Notes 1}
 \date{\today}
-\author{Michael Brodskiy\\ \small Professor: Alex Martsinkovsky}
+\author{Michael Brodskiy\\ \small Professor: A. Martsinkovsky}
 
 \begin{document}
 
@@ -10,7 +10,121 @@
 
 \begin{itemize}
 
-  \item
+  \item What is a vector?
+
+    \begin{itemize}
+
+      \item A magnitude and a direction? (not all vectors in the real world can be added, so not entirely true)
+
+      \item For our course, vectors exist in vector spaces ($\mathbb{R}^2,\,\mathbb{R}^3,\,\dots,\,\mathbb{R}^n$)
+
+      \item $\overline{v}=\langle v_1,\,v_2,\,\dots,\,v_n \rangle$
+
+      \item $\mathbb{R}^1$ represents scalars, while $\mathbb{R}^2,\,\mathbb{R}^3,\,\dots,\,\mathbb{R}^n$ are vectors
+
+    \end{itemize}
+
+  \item Properties of Vectors
+
+    \begin{itemize}
+
+      \item Can be added
+
+        \begin{itemize}
+
+          \item $\overline{v}=\langle v_1,\,v_2,\,\dots,\,v_n \rangle + \overline{w}=\langle w_1,\,w_2,\,\dots,\,w_n \rangle = \langle v_1+w_1,\,v_2+w_2,\,\dots,\,v_n+w_n \rangle$
+
+          \item If forming a parallelogram from the vectors, the diagonal is the sum, $\overline{v}+\overline{w}$, of two vectors
+
+        \end{itemize}
+
+      \item Can be scaled (scalar multiplication)
+
+        \begin{itemize}
+
+          \item $2\overline{v}=\langle 2v_1,\,2v_2,\,\dots,\,2v_n \rangle$
+
+          \item Magnitude is multiplied by the factor
+
+        \end{itemize}
+
+      \item Can find magnitude (length)
+
+        \begin{itemize}
+
+          \item $|\overline{v}|=\sqrt{v_1^2+v_2^2+\dots+v_n^2}$
+
+          \item \textit{Ex.} $\overline{v}=\langle 2, -3 \rangle \Rightarrow |\overline{v}| = \sqrt{(2)^2 + (-3)^2)} = \sqrt{13}$
+
+        \end{itemize}
+
+      \item A vector divided by its own magnitude becomes a vector of magnitude 1 (unit vector)
+
+        \begin{itemize}
+
+          \item $|\frac{\overline{v}}{|\overline{v}|}|=1$
+
+          \item Unit vectors are dimensionless (no units)
+
+          \item A vector that is by itself of length 1 is not a unit vector
+
+          \item A unit vector is simply a direction (all unit vectors from a given point form a circle)
+
+        \end{itemize}
+
+      \item Any non-zero vector is the product of its magnitude and its direction
+
+        \begin{itemize}
+
+          \item $\overline{v} = |\overline{v}| \cdot \frac{\overline{v}}{|\overline{v}|}$
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item Linear Combinations
+
+    \begin{itemize}
+
+      \item $\overline{v}_1,\,\overline{v}_2,\,\dots,\,\overline{v}_s$
+
+      \item A linear combination of $\overline{v}_i$ is any sum of the form $r_1\overline{v}_1+r_2\overline{v}_2+\dots+r_n\overline{v}_n$, where $r_i$ are scalars
+
+    \end{itemize}
+
+  \item Basis Vectors
+
+    \begin{itemize}
+
+      \item $\mathbb{R}^n$ standard basis vectors: $\overline{e}_1,\,\overline{e}_2,\,\dots,\,\overline{e}_n\Rightarrow\left\{\begin{array}{c} \overline{e}_1=\langle 1, 0, \dots, 0\rangle\\\overline{e}_2=\langle 0, 1, \dots, 0\rangle\\ \vdots\\ \overline{e}_n = \langle 0, 0, \dots, 1\rangle\end{array}$
+
+      \item Any vector is a linear combination of the standard basis vectors
+
+      \item $\overline{w}=\langle w_1,\,w_2,\,\dots,\,w_n\rangle= w_1\overline{e}_1 + w_2\overline{e}_2 + \dots + w_n\overline{e}_n$
+
+      \item \textit{Ex.} $\overline{v}=\langle 2, -3 \rangle = 2\langle 1, 0 \rangle + -3 \langle 0, 1 \rangle$
+
+    \end{itemize}
+
+  \item Dot Product
+
+    \begin{itemize}
+
+      \item The dot product of two vectors is always a scalar
+
+      \item Geometric Definition: $\overline{v} \cdot \overline{w} = |\overline{v}||\overline{w}|\cos(\theta)$, where $\theta$ is the angle between $\overline{v}$ and $\overline{w}$
+
+        \begin{itemize}
+
+          \item $\overline{v}\cdot\overline{w} = 0$ when $\theta = \frac{\pi}{2}$
+
+          \item $\overline{v}\cdot\overline{w} > 0$ when $\theta$ is acute
+
+          \item $\overline{v}\cdot\overline{w} < 0$ when $\theta$ is obtuse
+
+        \end{itemize}
+
+    \end{itemize}
 
 \end{itemize}
 
