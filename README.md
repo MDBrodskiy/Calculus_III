@@ -21,8 +21,9 @@
 
 * [**Notes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes)
   * [**Includes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Includes.tex)
-  * [**Introduction**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Introduction.pdf)
-  * [**Lesson 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Notes1.pdf)
+  * [**Week 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Week 1/)
+    * [**Introduction**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Week 1/Introduction.pdf)
+    * [**Lesson 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Week 1/Notes1.pdf)
 <!--
   * [**Chapter 1**](#Notes/Chapter\ 1)
 * [**Exams**](#Exams)
