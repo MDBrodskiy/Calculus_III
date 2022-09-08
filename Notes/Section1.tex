@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Calculus III (MATH2321)
+% Professor: A. Martsinkovsky
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\title{Section 1}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: A. Martsinkovsky}
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item What is a vector?
+
+    \begin{itemize}
+
+      \item A magnitude and a direction? (not all vectors in the real world can be added, so not entirely true)
+
+      \item For our course, vectors exist in vector spaces ($\mathbb{R}^2,\,\mathbb{R}^3,\,\dots,\,\mathbb{R}^n$)
+
+      \item $\overline{v}=\langle v_1,\,v_2,\,\dots,\,v_n \rangle$
+
+      \item $\mathbb{R}^1$ represents scalars, while $\mathbb{R}^2,\,\mathbb{R}^3,\,\dots,\,\mathbb{R}^n$ are vectors
+
+    \end{itemize}
+
+  \item Properties of Vectors
+
+    \begin{itemize}
+
+      \item Can be added
+
+        \begin{itemize}
+
+          \item $\overline{v}=\langle v_1,\,v_2,\,\dots,\,v_n \rangle + \overline{w}=\langle w_1,\,w_2,\,\dots,\,w_n \rangle = \langle v_1+w_1,\,v_2+w_2,\,\dots,\,v_n+w_n \rangle$
+
+          \item If forming a parallelogram from the vectors, the diagonal is the sum, $\overline{v}+\overline{w}$, of two vectors
+
+        \end{itemize}
+
+      \item Can be scaled (scalar multiplication)
+
+        \begin{itemize}
+
+          \item $2\overline{v}=\langle 2v_1,\,2v_2,\,\dots,\,2v_n \rangle$
+
+          \item Magnitude is multiplied by the factor
+
+        \end{itemize}
+
+      \item Can find magnitude (length)
+
+        \begin{itemize}
+
+          \item $|\overline{v}|=\sqrt{v_1^2+v_2^2+\dots+v_n^2}$
+
+          \item \textit{Ex.} $\overline{v}=\langle 2, -3 \rangle \Rightarrow |\overline{v}| = \sqrt{(2)^2 + (-3)^2)} = \sqrt{13}$
+
+        \end{itemize}
+
+      \item A vector divided by its own magnitude becomes a vector of magnitude 1 (unit vector)
+
+        \begin{itemize}
+
+          \item $|\frac{\overline{v}}{|\overline{v}|}|=1$
+
+          \item Unit vectors are dimensionless (no units)
+
+          \item A vector that is by itself of length 1 is not a unit vector
+
+          \item A unit vector is simply a direction (all unit vectors from a given point form a circle)
+
+        \end{itemize}
+
+      \item Any non-zero vector is the product of its magnitude and its direction
+
+        \begin{itemize}
+
+          \item $\overline{v} = |\overline{v}| \cdot \frac{\overline{v}}{|\overline{v}|}$
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item Linear Combinations
+
+    \begin{itemize}
+
+      \item $\overline{v}_1,\,\overline{v}_2,\,\dots,\,\overline{v}_s$
+
+      \item A linear combination of $\overline{v}_i$ is any sum of the form $r_1\overline{v}_1+r_2\overline{v}_2+\dots+r_n\overline{v}_n$, where $r_i$ are scalars
+
+    \end{itemize}
+
+  \item Basis Vectors
+
+    \begin{itemize}
+
+      \item $\mathbb{R}^n$ standard basis vectors: $\overline{e}_1,\,\overline{e}_2,\,\dots,\,\overline{e}_n\Rightarrow\left\{\begin{array}{c} \overline{e}_1=\langle 1, 0, \dots, 0\rangle\\\overline{e}_2=\langle 0, 1, \dots, 0\rangle\\ \vdots\\ \overline{e}_n = \langle 0, 0, \dots, 1\rangle\end{array}$
+
+      \item Any vector is a linear combination of the standard basis vectors
+
+      \item $\overline{w}=\langle w_1,\,w_2,\,\dots,\,w_n\rangle= w_1\overline{e}_1 + w_2\overline{e}_2 + \dots + w_n\overline{e}_n$
+
+      \item \textit{Ex.} $\overline{v}=\langle 2, -3 \rangle = 2\langle 1, 0 \rangle + -3 \langle 0, 1 \rangle$
+
+    \end{itemize}
+
+  \item Dot Product
+
+    \begin{itemize}
+
+      \item The dot product of two vectors is always a scalar
+
+      \item Geometric Definition: $\overline{v} \cdot \overline{w} = |\overline{v}||\overline{w}|\cos(\theta)$, where $\theta$ is the angle between $\overline{v}$ and $\overline{w}$
+
+        \begin{itemize}
+
+          \item $\overline{v}\cdot\overline{w} = 0$ when $\theta = \frac{\pi}{2}$
+
+          \item $\overline{v}\cdot\overline{w} > 0$ when $\theta$ is acute
+
+          \item $\overline{v}\cdot\overline{w} < 0$ when $\theta$ is obtuse
+
+        \end{itemize}
+
+      \item Algebraic Definition: $\left\{\begin{array}{c} \overline{v} = \langle v_1,\,v_2,\,\dots,\,v_n \rangle \\ \overline{w} = \langle w_1,\,w_2,\,\dots,\,w_n \rangle \end{array} \Rightarrow \overline{v}\cdot\overline{w} = v_1w_1 + v_2w_2 + \dots + v_nw_n$
+
+          \begin{itemize}
+
+            \item \textit{Ex.} $\left\{\begin{array}{c} \overline{v} = \langle 4, 9, 5 \rangle \\ \overline{w} = \langle 4, 10, 3 \rangle \end{array} \Rightarrow \overline{v}\cdot\overline{w} = 4(4) + 9(10) + 5(3) = 121$
+
+          \end{itemize}
+
+        \item Together, the two definitions yield $\theta = \cos^{-1}\left(\frac{\overline{v}\cdot\overline{w}}{|\overline{v}||\overline{w}|}\right)$
+
+          \begin{itemize}
+
+            \item \textit{Ex.} Given $\overline{v}$ and $\overline{w}$ above, find the angle: $\cos^{-1}\left( \frac{121}{\sqrt{122}\sqrt{125}} \right)\approx .2$ rad
+
+          \end{itemize}
+
+      \item Vector Projection
+
+        \begin{itemize}
+
+          \item Assuming $\overline{u}$ is a unit vector, the projection of $\overline{F}$ onto $\overline{u}$ can be found using: $\text{proj}_{\overline{u}}\overline{F}=\left( \overline{F}\cdot\overline{u} \right)\overline{u}$
+
+          \item In general, because $\overline{u}=\frac{\overline{v}}{|\overline{v}|}$, the formula becomes: $\text{proj}_{\overline{v}}\overline{F}=\left( \overline{F}\cdot\frac{\overline{v}}{|\overline{v}|} \right)\frac{\overline{v}}{|\overline{v}|}=\left( \frac{\overline{F}\cdot\overline{v}}{|\overline{v}|^2} \right)\overline{v}$
+
+        \end{itemize}
+
+    \end{itemize}
+
+    \newpage
+
+    \item Work
+
+      \begin{itemize}
+
+        \item $\overline{F}$ is a constant vector, $\overline{d}$ represents the displacement — work is defined as $\overline{F}\cdot\overline{d}$
+
+        \item $W=\overline{F}\cdot\overline{d}=|\overline{F}||\overline{d}|\cos(\theta)$\\
+
+        \begin{figure}[h!]
+          \centering \include{Figures/Work.tex}
+          \caption{Diagram of Work}
+        \end{figure}
+
+      \end{itemize}
+
+    \item Lines and Planes
+
+      \begin{itemize}
+
+        \item \textit{Ex.} Given a point in $\mathbb{R}^2$, $( x_o, y_o ) = p$ and a vector $\overline{n}=\langle a, b \rangle$, find an equation of a line passing through $p$ and $\perp$ to $\overline{n}$
+
+          \begin{figure}[h!]
+            \centering \include{Figures/Line.tex}
+            \caption{Finding an Equation for a Line}
+          \end{figure}
+
+          \begin{itemize}
+
+            \item Create a vector: $\langle x - x_o, y - y_o \rangle$, then, by definition, dot product becomes: $\langle a, b \rangle \cdot \langle x - x_o, y - y_o \rangle = 0$, which yields $ax + by - ax_o - by_o = 0$, which can be simplified to $ax+by+c=0$
+
+          \end{itemize}
+
+        \item In $\mathbb{R}^3$: $\langle a, b, c \rangle \cdot \langle x - x_o, y - y_o, z - z_o \rangle$ becomes $a(x-x_o) + b(y-y_o) + c(z-z_o) = 0$ and then $ax + by + cz + d = 0$, this forms a plane through point $p$ (in $\mathbb{R}^3$)
+
+      \end{itemize}
+
+    \item Parametric Description of a Line
+
+      \begin{figure}[h!]
+        \centering \include{Figures/Parametric.tex}
+        \caption{Parametrization}
+      \end{figure}
+
+      \begin{itemize}
+
+        \item  $\left\{\begin{array}{c} x=x_o+ta\\y=y_o+tb\end{array}$
+
+      \end{itemize}
+
+\end{itemize}
+
+\end{document}
+
