@@ -19,9 +19,11 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
+* [**Includes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Includes.tex)
 * [**Notes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes)
-  * [**Includes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Includes.tex)
   * [**Section 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section1.pdf)
+* [**Homework**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework)
+  * [**1.2**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-2.pdf)
 <!--
   * [**Chapter 1**](#Notes/Chapter\ 1)
 * [**Exams**](#Exams)
