@@ -64,9 +64,19 @@
 
     \setcounter{enumi}{8}
 
-  \item
+  \item See figure below:
 
-  \item
+    \begin{figure}[H]
+      \centering \include{Figures/1-2-1}
+      \caption{$\overline{v} = \langle 1, 2\rangle,\, \overline{w} = \langle 1, 1 \rangle,\, a = 2$}
+    \end{figure}
+
+  \item See figure below:
+
+    \begin{figure}[H]
+      \centering \include{Figures/1-2-2}
+      \caption{$\overline{v} = \langle 1, 2\rangle,\, \overline{w} = \langle 1, 1 \rangle,\, a = -2$}
+    \end{figure}
 
     \setcounter{enumi}{12}
 
@@ -152,7 +162,7 @@
 
   \item $\overline{a}_i = \frac{30\bold{j}}{3} = 10\bold{j} \Rightarrow \overline{g} = -9.81\overline{j} \Rightarrow \sum \overline{a} = 10\bold{j} - 9.81\bold{j} = .19\bold{j}$, so it has an upward acceleration of .19 $\left[ \frac{\si{\meter}}{\si{\second\squared}} \right]$, but the direction of movement can not be determined
 
-  \item $F_g = \frac{Gm_1m_2}{r^2} = \frac{6.674(10)^{-11}(3)(5)}{\langle 1, 3, 4 \rangle^2} = G\langle 15, 135, 240 \rangle$
+  \item $F_g = \frac{Gm_1m_2}{|\overline{r}|^2}\cdot\frac{\overline{r}}{|\overline{r}|} = \frac{6.674(10)^{-11}(3)(5)}{26} \cdot \frac{\langle 1, 3, 4\rangle}{\sqrt{26}} = -G\langle \frac{15}{26\sqrt{26}}, \frac{45}{26\sqrt{26}}, \frac{60}{26\sqrt{26}} \rangle$
 
 \end{enumerate}
 
