@@ -24,6 +24,8 @@
   * [**Section 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section1.pdf)
 * [**Homework**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework)
   * [**1.2**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-2.pdf)
+  * [**1.3**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-3.pdf)
+  * [**1.4**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-4.pdf)
 <!--
   * [**Chapter 1**](#Notes/Chapter\ 1)
 * [**Exams**](#Exams)
