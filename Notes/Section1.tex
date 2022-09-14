@@ -14,7 +14,17 @@
 
 \maketitle
 
+\newpage
+
+\tableofcontents
+
+\listoffigures
+
+\newpage
+
 \begin{itemize}
+
+  \section{$\mathbb{R}^n$ as a Vector Space}
 
   \item What is a vector?
 
@@ -175,6 +185,8 @@
 
       \end{itemize}
 
+  \section{Lines, Planes, and Hyperplanes}
+
     \item Lines and Planes
 
       \begin{itemize}
@@ -216,6 +228,84 @@
           \begin{itemize}
 
             \item \textit{Ex.} Line segment from (2,1) to (3, -4):\\ $\overline{r}(t)=(1-t)\langle 2, 1 \rangle + t\langle 3, -4\rangle\Rightarrow \langle 2+t, 1-5t \rangle$
+
+          \end{itemize}
+
+      \end{itemize}
+
+      \newpage
+
+    \item Parametric Planes
+
+      \begin{figure}[h!]
+        \centering \include{Figures/Plane.tex}
+        \caption{Parametrization of a Plane}
+      \end{figure}
+
+      \begin{figure}[h!]
+        \centering \include{Figures/PlaneSpecific.tex}
+        \caption{Specific View of Parametrization of a Plane}
+      \end{figure}
+
+      \begin{itemize}
+
+        \item $\overline{r}=\overline{p}_o + s\overline{v} + t\overline{w}$, $-\infty \xrightarrow{s,t} \infty$
+
+          \begin{itemize}
+
+            \item $\overline{v}$ and $\overline{w}$ must \underline{not} be parallel to each other
+
+          \end{itemize}
+
+      \end{itemize}
+      
+  \section{The Cross Product}
+
+    \item Cross Product
+
+      \begin{itemize}
+
+        \item $\overline{v}\times\overline{w}$ produces a vector in $\mathbb{R}^3$
+
+        \item Geometric Definition: 
+
+          \begin{itemize}
+
+            \item Magnitude: $|\overline{v}||\overline{w}|\sin(\theta)$, $0\leq\theta\leq\pi$
+
+            \item Direction: $\overline{v}\times\overline{w}$ is $\perp$ to both $\overline{v}$ and $\overline{w}$
+
+              \begin{itemize}
+
+                \item Direction is uniquely determined by the right-hand rule
+
+              \end{itemize}
+
+            \item $\overline{v} \parallel \overline{w} \Leftrightarrow \overline{v}\times\overline{w} = 0$
+
+            \item $|\overline{v}\times\overline{w}|$ = the area of a parallelogram formed by $\overline{v}$ and $\overline{w}$
+
+          \end{itemize}
+
+        \item Algebraic Definition:
+
+          \begin{itemize}
+
+              \item A matrix is a rectangular array of numbers
+
+              \item Determinants:
+
+                \begin{itemize}
+
+                  \item $\text{det}([c]) = c$
+
+                  \item $\text{det}\left( \left[\begin{array}{c c} a & b \\ c & d \end{array}\right] \right) = ad - bc$
+
+                  \item $\text{det}\left( \left[\begin{array}{c c c} a & b & c\\ d & e & f\\ g & h & i \end{array}\right] \right)= a(ei - fh)\, \textcolor{red}{-}\, b (di - fg) + c (dh - eg)$
+
+                \end{itemize}
+
+              \item $\left\{\begin{array}{c} \overline{v}=\langle v_1, v_2, v_3 \rangle \\ \overline{w}=\langle w_1, w_2, w_3 \rangle \end{array}\Rightarrow$\\$\overline{v}\times\overline{w} = \left[ \begin{array}{c c c} \overline{i} & \overline{j} & \overline{k}\\ v_1 & v_2 & v_3\\ w_1 & w_2 & w_3  \end{array} \right]= \langle v_2w_3-v_3w_2,\,\textcolor{red}{-}v_1w_3-v_3w_1,v_1w_2-v_2w_1\rangle$
 
           \end{itemize}
 
