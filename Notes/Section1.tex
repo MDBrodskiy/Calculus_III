@@ -311,6 +311,34 @@
 
       \end{itemize}
 
+    \section{Functions of a Single Variable}
+
+  \item $f'(t)=\lim_{h\to 0}\left( \frac{f(t+h)-f(t)}{h} \right)$
+
+  \item \textit{Ex.} $f(t)=\langle t^2, t^3 \rangle\Rightarrow f'(t)=\langle 2t, 3t^2 \rangle$
+
+    \begin{itemize}
+
+      \item Distance is found with arc length
+
+        $$\text{dist} = \lim_{\Delta t \to 0}\sum \left|\overline{p}'(t)\right|\Delta t = \int_a^b s(t)\,dt\Rightarrow \int_0^1 \sqrt{(2t)^2 + (3t^2)^2}\,dt=\frac{1}{27}\left( 13^{1.5}-8 \right)$$
+
+    \end{itemize}
+
+  \item If $p(t)$ is position, then $\left\{\begin{array}{c c} p'(t)= & \text{velocity}\\ p''(t)= & \text{acceleration} \end{array}$
+
+    \item \textit{Ex.} Given $\overline{p}(t) = \langle \cos(t), \sin(t), t \rangle$, find velocity and acceleration:
+
+      $$\overline{v}(t)=\overline{p}'(t) = \langle -\sin(t), \cos(t), 1 \rangle \Rightarrow \overline{a}(t)=\overline{p}''(t) = \langle -\cos(t), -\sin(t), 0 \rangle$$
+
+      \begin{itemize}
+
+        \item Speed $= | \overline{v}(t)|$
+
+          $$|\overline{v}(t)| = \sqrt{\left(-\sin(t)\right)^2 + \left( \cos(t) \right)^2 + 1 = \sqrt{2}$$
+
+      \end{itemize}
+
 \end{itemize}
 
 \end{document}
