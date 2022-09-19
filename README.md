@@ -22,6 +22,7 @@
 * [**Includes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Includes.tex)
 * [**Notes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes)
   * [**Section 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section1.pdf)
+  * [**Section 2**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section2.pdf)
 * [**Homework**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework)
   * [**1.2**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-2.pdf)
   * [**1.3**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-3.pdf)
