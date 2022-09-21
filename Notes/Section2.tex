@@ -50,14 +50,72 @@
 
     \begin{itemize}
 
-      \item Given $f(x_1,x_2,\dots,x_n)$, the gradient of $f$, $\nabla f=\left\langle \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \dots, \dfrac{\partial f}{\partial x_n} \right\rangle$
+      \item Given $f(x_1,x_2,\dots,x_n)$, the gradient of $f$, $\overline{\nabla} f=\left\langle \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \dots, \dfrac{\partial f}{\partial x_n} \right\rangle$
 
-      \item It can be computed at a point: $\nabla f(p)=\left\langle \dfrac{\partial f}{\partial x_1}(p), \dfrac{\partial f}{\partial x_2}(p), \dots, \dfrac{\partial f}{\partial x_n}(p) \right\rangle$
+      \item It can be computed at a point: $\overline{\nabla} f(p)=\left\langle \dfrac{\partial f}{\partial x_1}(p), \dfrac{\partial f}{\partial x_2}(p), \dots, \dfrac{\partial f}{\partial x_n}(p) \right\rangle$
 
+      \item $\overline{\nabla} f\approx f'(x_o)\Delta x$
 
-      \item $\nabla f\approx f'(x_o)\Delta x$
+    \end{itemize}
 
-      \item $\nabla f \approx \nabla f \cdot \Delta \overline{x}$
+    \section{Linear Approximation, Tangent Planes, and the Differential}
+
+  \item In calculus I, the linear approximation is given by: $f(x) \approx f(a) + f'(a)(x-a)$
+
+  \item  In calculus III, the approximation uses the gradient: $\Delta f\approx \overline{\nabla} f(p) \cdot \Delta \overline{x}$
+
+  \item \textit{Ex.\ in $\mathbb{R}^2$} $z=f(x,y)$, $p=(a,b)$:
+
+    \vspace{-20pt}
+
+    $$\Delta f \approx \overline{\nabla}f(a,b) \cdot \langle x-a, y-b \rangle \Rightarrow f(x,y) - f(a,b) \Rightarrow f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$$
+
+    \vspace{-20pt}
+
+    \begin{center}
+      Thus:
+    \end{center}
+
+    \vspace{-25pt}
+
+    $$f(x,y) \approx f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$$
+
+    \vspace{-15pt}
+
+    \begin{center}
+      We find the linearization of $f(x,y)$ near $(a,b)$ (in $\mathbb{R}^2$)
+    \end{center}
+
+  \item Linearization of $f(x,y)$ near $(a,b)$ is denoted by $L_f(\overline{x},\overline{p})$, where $p$ is the vector $\langle a, b \rangle$
+
+  \item \textit{Ex. Given a cylinder of radius $r=.5$ and a height of $h=1$, estimate the change in volume when the radius is increased by $.1$ and the height is decreased by $.1$}
+
+    $$V=\pi r^2h\Rightarrow \Delta V \approx 2\pi(.5)(1)(r - .5) + \pi(.5)^2(h - 1) = \pi(r - .5) + .25\pi(h - 1) \approx$$
+    $$-.75\pi + \pi r + .25\pi h\Rightarrow -.75\pi + \pi(.6) + .25\pi(.9) = .075\pi$$
+
+    \vspace{5pt}
+
+  \item The graph of $z=L_f(\overline{x},\overline{p})$ is called the tangent set to $f$ at $p$
+
+  \item Differentials
+
+    \begin{itemize}
+
+      \item $df = \overline{\nabla}f\cdot d\overline{x}$
+
+      \item $df = f_xdx + f_ydy + f_zdz$
+
+      \item $df = \dfrac{\partial f}{\partial x_1}dx_1 + \dfrac{\partial f}{\partial x_2}dx_2 + \dots + \dfrac{\partial f}{\partial x_n}dx_n$
+
+    \end{itemize}
+
+  \item Relative Differentials
+
+    \begin{itemize}
+
+      \item $\dfrac{df}{f}$
+
+      \item Think of this as a stencil for relative error $\left( \dfrac{\Delta f}{f} \right)$
 
     \end{itemize}
 
