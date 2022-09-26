@@ -119,6 +119,64 @@
 
     \end{itemize}
 
+    \section{Differentiation Rules}
+
+  \item Linearity of differentiation
+
+    \begin{enumerate}
+
+      \item $\nabla(af\pm bg) = a\nabla f \pm b\nabla g$
+
+    \end{enumerate}
+
+  \item Product rule
+
+    \begin{enumerate}
+
+        \setcounter{enumi}{1}
+
+      \item $\nabla (fg)(p)= \nabla f(p)g(p) = \nabla g(p) f(p)$
+
+    \end{enumerate}
+
+  \item Quotient rule
+
+    \begin{enumerate}
+
+        \setcounter{enumi}{2}
+
+      \item $\nabla\left( \dfrac{f}{g} \right)\Big |_p=\dfrac{g(p)\nabla f(p) - f(p) \nabla g(p)}{g^2(p)}$
+
+    \end{enumerate}
+
+  \item Power rule
+
+    \begin{enumerate}
+
+        \setcounter{enumi}{3}
+
+      \item $\nabla f^{\alpha}(p) = \alpha f^{\alpha - 1}(p) \nabla f(p)$
+
+    \end{enumerate}
+
+    \newpage
+
+  \item Chain rule
+
+    \begin{enumerate}
+
+        \setcounter{enumi}{4}
+
+      \item $\dfrac{df}{dt}=\dfrac{\partial f}{\partial x}\dfrac{dx}{dt} + \dfrac{\partial f}{\partial y}\dfrac{dy}{dt} + \dots + \dfrac{\partial f}{\partial z}\dfrac{dz}{dt}\Rightarrow \nabla f \cdot \dfrac{d\overline{x}}{dt}$
+
+    \end{enumerate}
+
+  \item \textit{Ex.} A particle is moving through space. At $t=2$ seconds, the particle is at $(3,4,7)$, and is moving with velocity $\langle -2, 1, 5 \rangle$ meters per second. Suppose that there is also an electric potential in space, given by $\phi(x,y,z)=xy-z^2$ volts. Find the instantaneous rate of change, $w$, $r$, $t$, time $t$, of the electric potential at the particle's position at $t=2$ seconds.
+
+    $$\dfrac{d\phi}{dt}\Big|_{t=2}=\nabla \phi(\langle 3, 4, 7 \rangle)\cdot \dfrac{d\overline{p}}{dt}\Big|_{t=2}= \nabla \phi(\langle 3, 4, 7 \rangle)\cdot v(2)\Rightarrow$$
+
+    $$\nabla \phi = \langle y, x, -2z \rangle(\langle 3, 4, 7 \rangle) = \langle 4, 3, -14 \rangle \Rightarrow \langle 4, 3, -14 \rangle \cdot \langle -2, 1, 5 \rangle = -75 \text{ volts per second}$$
+
 \end{itemize}
 
 \end{document}
