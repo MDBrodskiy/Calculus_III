@@ -171,11 +171,65 @@
 
     \end{enumerate}
 
-  \item \textit{Ex.} A particle is moving through space. At $t=2$ seconds, the particle is at $(3,4,7)$, and is moving with velocity $\langle -2, 1, 5 \rangle$ meters per second. Suppose that there is also an electric potential in space, given by $\phi(x,y,z)=xy-z^2$ volts. Find the instantaneous rate of change, $w$, $r$, $t$, time $t$, of the electric potential at the particle's position at $t=2$ seconds.
+  \item \textit{Ex.} A particle is moving through space. At $t=2$ seconds, the particle is at $(3,4,7)$, and is moving with velocity $\langle -2, 1, 5 \rangle$ meters per second. Suppose that there is also an electric potential in space, given by $\phi(x,y,z)=xy-z^2$ volts. Find the instantaneous rate of change, with respect to time $t$, of the electric potential at the particle's position at $t=2$ seconds.
 
     $$\dfrac{d\phi}{dt}\Big|_{t=2}=\nabla \phi(\langle 3, 4, 7 \rangle)\cdot \dfrac{d\overline{p}}{dt}\Big|_{t=2}= \nabla \phi(\langle 3, 4, 7 \rangle)\cdot v(2)\Rightarrow$$
 
     $$\nabla \phi = \langle y, x, -2z \rangle(\langle 3, 4, 7 \rangle) = \langle 4, 3, -14 \rangle \Rightarrow \langle 4, 3, -14 \rangle \cdot \langle -2, 1, 5 \rangle = -75 \text{ volts per second}$$
+
+    \section{The Directional Derivative}
+
+  \item Directions live in the input of the function
+
+  \item Same is true for $\nabla f$
+
+  \item What is rate of change of $z=f(x,y)$ in the direction $\overline{u}$?
+
+    \begin{itemize}
+
+      \item Fix point $p$ in $xy$-plane
+
+      \item Choose direction ($\overline{u}$-direction) in $xy$-plane
+
+      \item $D_{\overline{u}}f(p) = \nabla f(p)\cdot\overline{u}$
+
+        \begin{itemize}
+
+          \item This is the derivative of $f$ at $p$ in the direction of $\overline{u}$
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item Alternative: Fix $f(x,y)$ and point $p$, but $\overline{u}$ varies
+
+  \item What is $\overline{u}$ in which $f(x,y)$ changes in the fastest possible way?
+
+    \begin{itemize}
+
+      \item When the angle between the direction and $\nabla f$ is $\theta = 0$ (because $\cos(\theta)$) is greatest at this angle
+
+        \begin{itemize}
+
+          \item Smallest occurs in opposite directions (when $\theta = \pi$) because $\cos(\theta)$ is the largest possible negative
+
+          \item Equals zero when $\overline{u} \perp \nabla f(p)$ $\left(\textit{i.e. } \theta = \dfrac{\pi}{2}\right)$
+
+        \end{itemize}
+
+      \item Thus, $D_{\overline{u}}f(p)$ is largest possible in direction of $\nabla f(p)$
+
+      \item The largest rate is the magnitude of the gradient vector $\left(|\nabla f(p)|\right)$
+
+        \begin{itemize}
+
+          \item The largest rate is the negative magnitude, $-|\nabla f(p)|$
+
+        \end{itemize}
+
+      \item This is all assuming that $\nabla f(p) \neq 0$
+
+    \end{itemize}
 
 \end{itemize}
 
