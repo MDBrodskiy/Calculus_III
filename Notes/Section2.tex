@@ -289,6 +289,50 @@
 
   \item The equation of a tangent plane $a\overline{r}_u(u_o,v_o)+b\overline{r}_v(u_o,v_o)$
 
+    \section{Local Extrema}
+
+  \item In Calc I, critical points occurred where $f'(x)=0$ or undefined with the first derivative test, or depending on concavity for the second derivative test
+
+  \item The second derivative test was as follows:
+
+    \begin{itemize}
+
+      \item If $f''(p) > 0$, $p$ is a local min
+
+      \item If $f''(p) < 0$, $p$ is a local max
+
+      \item If $f''(p) = 0$, $p$ is neither
+
+    \end{itemize}
+
+  \item In Calc III, critical points occur where $\nabla f = 0$ or undefined, but the first derivative test is not practical
+
+  \item The second derivative test is now done as:
+
+    \begin{itemize}
+
+      \item Hessian Matrix: $\left[ \begin{array}{c c} f_{xx}(p) & f_{yx}(p)\\ f_{xy}(p) & f_{yy}(p)  \end{array} \right]$, then find the determinant:
+
+      \item $D=f_{xx}(p)f_{yy}(p)-f_{xy}^2(p)$
+
+      \item A critical point $p$ is non-degenerate if $D\neq0$
+
+      \item Assuming $p$ is non-degenerate:
+
+        \begin{itemize}
+
+          \item If $D > 0$ and $f_{xx}(p) > 0$, then $f$ has a local minimum at $p$
+
+          \item If $D > 0$ and $f_{xx}(p) < 0$, then $f$ has a local maximum at $p$
+
+          \item If $D < 0$, then $p$ is a saddle point of $f$
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item Saddle points occur where there are critical points, but a local extreme value is not contained
+
 \end{itemize}
 
 \end{document}
