@@ -26,7 +26,23 @@
 
   \item \textit{Ex. } $\dfrac{\delta f}{\delta x} = 3x^2 - 5y^2\Rightarrow f = x^3 - 5y^2x + g(y)$
 
-  \item $\displaystyle \int_{y}^{y^2} 3x^2-5y^2\,dx\Rightarrow y^6 - 5y^4 - (y^3 - 5y^3)= y^6 - 5y^4 + 4y^3$ 
+  $$\displaystyle \int_{y}^{y^2} 3x^2-5y^2\,dx\Rightarrow y^6 - 5y^4 - (y^3 - 5y^3)= y^6 - 5y^4 + 4y^3$$
+
+  \vspace{5pt}
+
+  $$\displaystyle \int_0^2\int_{y}^{y^2} 3x^2-5y^2\,dx\,dy\Rightarrow y^6 - 5y^4 - (y^3 - 5y^3) = \displaystyle \int_0^2 (y^6 - 5y^4 + 4y^3)\,dy =$$\vspace{-15pt}\\$$ \frac{1}{7}(2)^7-(2)^5+(2)^4 = \frac{128}{7} - 16 = \frac{16}{7}$$
+
+  \item \textit{Ex. } $\displaystyle \int_1^3 \int_0^{\sin(x)} \frac{1+2y}{\sin(x)}\,dy\,dx=$
+
+  $$\frac{1}{\sin(x)}\left( \sin(x)+(\sin(x))^2 \right) = \int_1^3 1 + \sin(x)\,dx = x - \cos(x) =$$\vspace{-15pt}\\$$3 - \cos(3) - 1 + \cos(1) = 2 + \cos(1) - \cos(3)$$
+
+  \item \textit{Ex. } $\displaystyle \int_0^2\int_y^1\int_z^{yz} 8xyz\,dx\,dz\,dy=$
+
+  $$yz((4(yz)^2 - 4z^2) = \int_0^2\int_y^1 4y^3z^3 - 4yz^3\,dz\,dy = (y^3 - y) - (y^7 - y^4) =$$\vspace{-15pt} \\$$\int_0^2 -y^7 + y^4 + y^3 - y\,dy = -\frac{1}{8}(2)^7 + \frac{1}{5}(2)^5 + \frac{1}{4}(2)^4 - \frac{1}{2}(2)^2 = -16 + \frac{32}{5} + 4 - 2 = -\frac{38}{5}$$
+
+  \item \textit{Ex. } $\dfrac{\delta f}{\delta x} = 3x^2-5y^2,\,\,\dfrac{\delta f}{\delta y} = -10xy + 8y^3,\,\, f=$ ?
+
+    $$\int \frac{\delta f}{\delta x}\,dx = x^3 - 5xy^2 + g(y) = \frac{\delta f}{\delta y} = -10xy + g'(y)\Rightarrow g'(y) = 8y^3 \Rightarrow f(x,y) = x^3-5xy^2+2y^4 + c$$
 
 \end{itemize}
 
