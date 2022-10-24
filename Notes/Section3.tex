@@ -44,6 +44,68 @@
 
     $$\int \frac{\delta f}{\delta x}\,dx = x^3 - 5xy^2 + g(y) = \frac{\delta f}{\delta y} = -10xy + g'(y)\Rightarrow g'(y) = 8y^3 \Rightarrow f(x,y) = x^3-5xy^2+2y^4 + c$$
 
+    \section{Integration in $\mathbb{R}^2$}
+
+  \item Double Integral
+
+    \begin{itemize}
+
+      \item $\displaystyle \iint_R f(x,y)\,dA$
+
+    \end{itemize}
+
+  \item Fubini's Theorem: Utilize iterated integration to calculate multiple-integration
+
+    \begin{itemize}
+
+      \item $\displaystyle \iint_R f(x,y)\, dA \longrightarrow\int_a^b\int_c^d f(x,y)\,dy\,dx$
+
+    \end{itemize}
+
+  \item For Type I Regions:
+
+    \begin{itemize}
+
+      \item $\displaystyle \int_a^b\int_{p(x)}^{q(x)} f(x,y)\,dy\,dx$
+
+      \item Occurs when $y$ is bounded by functions of $x$ and $x$ is bounded by vertical lines ($x=c$)
+
+    \end{itemize}
+
+  \item For Type II Regions:
+
+    \begin{itemize}
+
+      \item $\displaystyle \int_c^d\int_{r(x)}^{s(x)} f(x,y)\,dx\,dy$
+
+      \item Occurs when $x$ is bounded by functions of $y$ and $y$ is bounded by horizontal lines ($y=c$)
+
+    \end{itemize}
+
+  \item A function can be Type I, Type II, both, or neither
+
+  \item Regions can be broken down into parts to make calculations easier:
+
+    \begin{itemize}
+
+      \item Given $R$ and two subregions, $R'$ and $R''$, the integral becomes:
+
+        \begin{itemize}
+
+          \item $\displaystyle \iint_R f\,dA = \iint_{R'} f\,dA + \iint_{R''} f\,dA$
+
+        \end{itemize}
+
+    \end{itemize}
+
+  \item Remark: If $f(x,y)=1$, then:
+
+    \begin{itemize}
+
+      \item $\displaystyle \iint_R\,dA =$ Area of $R$
+
+    \end{itemize}
+
 \end{itemize}
 
 \end{document}
