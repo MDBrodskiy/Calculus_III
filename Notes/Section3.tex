@@ -152,6 +152,24 @@
 
     \item Mass $=\left\{\begin{array}{l} \displaystyle \int_a^b \delta(x)\,dx \\ \displaystyle \iint_R \delta(x,y)\,dA\\ \displaystyle \iiint_S \delta(x,y,z)\,dV \end{array}$
 
+\section{Surfaces and Area}
+
+    \item Break the area into sub-rectangles that are parametrized. The area of one sub-rectangle (in $\mathbb{R}^2$)/parallelogram (in $\mathbb{R}^3$) is $|\overline{r}_u\times\overline{r}_v|\,du\,dv$
+
+    \item Summing all of the sub-rectangles together, we get: Area $=\displaystyle\iint_D |\overline{r}_u\times\overline{r}_v|\,du\,dv$
+
+    \item To parametrize $f(x,y)$, simply choose: $\left\{\begin{array}{l} \begin{array}{l} x=x\\y=y\\\end{array}\Big\}\text{parameters}\\ z = f(x,y)\end{array}$
+
+      \begin{itemize}
+
+        \item This would make $\left\{\begin{array}{l} \overline{r}_x=\langle 1, 0, f_x \rangle\\ \overline{r}_y= \langle 0, 1, f_y\rangle \end{array}$
+
+          \item $|\overline{r}_x\times\overline{r}_y|= |\langle -f_x, -f_y, 1 \rangle|=\displaystyle\iint_D \sqrt{(f_x)^2+(f_y)^2+1\,dx\,dy}$
+
+      \end{itemize}
+
+    \item If $S=S_1 + S_2 + \cdots + S_n$ is smooth, then Area($S$) $=$ Area($S_1$) $+$ Area($S_2$) $+ \cdots +$ Area($S_n$)
+
 \end{itemize}
 
 \end{document}
