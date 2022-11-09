@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Calculus III (MATH2321)
+% Professor: A. Martsinkovsky
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes}
+
+\title{Section 4}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: A. Martsinkovsky}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\begin{itemize}
+
+    \section{Vector Fields}
+
+  \item A vector field in $\mathbb{R}^n$ is an assignment that goes from $\mathbb{R}^n\to\mathbb{R}^n$, where the former is viewed as a bunch of points, and the latter is a bunch of vectors
+
+    \begin{itemize}
+
+      \item Two examples: a force field (\textit{e.g.} gravity, electrostatic, magnetic) or a velocity field (\textit{e.g.} fluid mechanics)
+
+    \end{itemize}
+
+  \item \textit{Ex.} A gravitational field, with two masses, one fixed ($M$), and one floating ($m$)
+
+    \begin{itemize}
+
+      \item The pull $=$ magnitude $\cdot$ direction $\rightarrow G\dfrac{Mm}{|\overline{d}|^2}\cdot\dfrac{\overline{d}}{|\overline{d}|} = G\dfrac{Mm}{|\overline{d}|^3}\overline{d}$
+
+    \end{itemize}
+
+  \item \textit{Ex.} Gradient vector fields
+
+    \begin{itemize}
+
+      \item $f(\overline{x}) \rightarrow \nabla f = \Big\langle\dfrac{\delta f}{\delta x_1}, \dfrac{\delta f}{\delta x_2}, \cdots, \dfrac{\delta f}{\delta x_n}\Big\rangle$
+
+      \item Not every vector field can be realized as a gradient vector field of some function
+
+      \item The `del' operator is as follows: $\nabla :=\Big\langle \dfrac{\delta}{\delta x_1}, \dfrac{\delta}{\delta x_2}, \cdots, \dfrac{\delta}{\delta x_n} \Big\rangle$
+
+      \item Apply $\nabla$ to a function $f$ to obtain a gradient vector field (use dot product)
+
+      \item $\nabla \cdot F = \dfrac{\delta F_1}{\delta x_1} + \dfrac{\delta F_2}{\delta x_2} + \cdots + \dfrac{\delta F_n}{\delta x_n} = \text{div}(F)$
+
+        \begin{itemize}
+
+          \item This is the divergence of $F$
+
+        \end{itemize}
+
+      \item $\nabla \times F$ describes the curl of $F$ (how the vector field curls in three dimensions)
+
+    \end{itemize}
+
+    \begin{center}
+      Using the $\nabla$ operator:\\
+      \begin{tabular}{| l | l | l |}
+        \hline
+        input & output & significance\\
+        \hline
+        function $f$ & $\nabla f$ & gradient of $f$ (a vector field)\\
+        \hline
+        vector field of $f$ & $\nabla\cdot f$ & divergence of $f$ (a function)\\
+        \hline
+        $n=3$ vector field of $f$ & $\nabla\times f$ & curl of $f$ (a vector field)\\
+        \hline
+      \end{tabular}
+    \end{center}
+
+  \item To view 2D vector fields as 3D vector fields, convert $F=\langle P(x,y), Q(x,y)\rangle\to$\\$\langle P(x,y), Q(x,y), 0 \rangle$
+
+  \item The curl of a two dimensional vector field, converted to three dimensions, is curl$(F) = Q_x-P_y$
+
+\end{itemize}
+
+\end{document}
+
