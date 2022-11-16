@@ -115,6 +115,22 @@
 
   \item $\overline{F}$ is conservative if and only if curl($\overline{F}$)=0
 
+    \section{Green's Theorem}
+
+  \item Let $R$ be a region in $\mathbb{R}^2$ bounded by a simple, closed, oriented, counter-clockwise, piecewise-regular curve $\delta R$. Let $\overline{F}=\langle P(x,y), Q(x,y) \rangle$ be a continuous, differentiable vector field on an open set containing $R$, then:
+
+    $$\int_{\delta R} \overline{F}\,d\overline{r}=\iint_R Q_x-P_y\,dA$$
+
+    \begin{itemize}
+
+      \item Simple: The curve can not fold in on itself
+
+      \item Closed: The curve starts and ends at the same point
+
+    \end{itemize}
+
+  \item Because, in $\mathbb{R}^2$, $Q_x-P_y=\text{curl}(\overline{F})=\nabla \times \overline{F}$, the integral can be rewritten as $\displaystyle \int_{\delta R}\overline{F}\,d\overline{r}=\iint_R\delta\overline{F}\,dA$
+
 \end{itemize}
 
 \end{document}
