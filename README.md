@@ -21,9 +21,10 @@
 
 * [**Includes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Includes.tex)
 * [**Notes**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes)
-  * [**Section 1**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section1.pdf)
-  * [**Section 2**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section2.pdf)
-  * [**Section 3**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section3.pdf)
+  * [**Multivariable Spaces and Functions**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section1.pdf)
+  * [**Multivariable Derivatives**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section2.pdf)
+  * [**Multivariable Integrals**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section3.pdf)
+  * [**Integration and Vector Fields**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Notes/Section4.pdf)
 * [**Homework**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework)
   * [**1.2**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-2.pdf)
   * [**1.3**](https://github.com/MDBrodskiy/Calculus_III/tree/master/Homework/1-3.pdf)
