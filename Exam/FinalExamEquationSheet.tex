@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Calculus III (MATH-2321)
+% Professor: A. Martsinkovsky
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead[\textsc{Fall 2022}]{\textsc{Fall 2022}}
+\chead[\textit{Calculus III Final Exam Equation Sheet}]{\textit{Calculus III Final Exam Equation Sheet}}
+\rhead[\textsc{Math-2321}]{\textsc{Math-2321}}
+\cfoot[\thepage]{\thepage}
+
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\pagenumbering{gobble}
+\begin{document}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \overline{v}\cdot\overline{w}=|\overline{v}||\overline{w}|\cos(\theta)=\overline{v}_1\overline{w}_1+\dots\overline{v}_n\overline{w}_n
+    
+  \end{equation*}
+
+  \begin{equation*}
+    \text{Proj}_{\overline{v}}(\overline{F})=\left( \dfrac{\overline{F}\cdot\overline{v}}{|\overline{v}|^2} \right)\overline{v}
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-60pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \text{Eq }\perp\overline{n}\rightarrow \overline{n}\cdot\langle x-x_o, y-y_o,\dots\rangle=0
+  \end{equation*}
+    
+  \begin{equation*}
+    |\overline{v}\times\overline{w}|=|\overline{v}||\overline{w}|\sin(\theta)
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \text{Parametrization: }\overline{r}(t)=\overline{r}_o+t\overline{v}
+  \end{equation*}
+    
+  \begin{equation*}
+    \text{Point to point: }\overline{r}(t)=(1-t)\overline{p}+t\overline{q}, 0\xrightarrow{t}1
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    f(x,y)\approx f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)
+  \end{equation*}
+    
+  \begin{equation*}
+    \dfrac{df}{dt}=\dfrac{\delta f}{\delta x}\dfrac{dx}{dt} + \dfrac{\delta f}{\delta y}\dfrac{dy}{dt} + \cdots = \nabla f\cdot\frac{d\overline{x}}{dt}
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    D_{\overline{u}}f(p)=\nabla f(p)\cdot\overline{u}
+  \end{equation*}
+    
+  \begin{equation*}
+    \text{Lagrange Multipliers: }\overline{\nabla}f=\lambda\overline{\nabla}g
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \begin{split}
+    D=f_{xx}(p)f_{yy}(p)-f_{xy}^2(p)\\
+    \text{Degenerate if } D = 0\\
+    \text{If }D > 0,\text{ and }f_{xx}(p) > 0,\text{ min}\\
+    \text{If }D > 0,\text{ and }f_{xx}(p) < 0,\text{ max}\\
+    \text{If }D < 0,\text{ saddle point}
+  \end{split}
+  \end{equation*}
+
+  \begin{equation*}
+    \begin{split}
+    V=&\iiint_S\,dV\\
+    =&\iiint_Sr\,dr\,d\theta\,dz\\
+    =&\iiint_S\rho^2\sin(\phi)\,d\rho\,d\phi\,d\theta
+  \end{split}
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \begin{split}
+    \text{Surface Area: }\iint_D |\overline{r}_u\times\overline{r}_v|\,du\,dv\\
+    \int_C \overline{F}\cdot d\overline{r}=\int_a^b \overline{F}(\overline{r}(t))\cdot\overline{r}'(t)\,dt
+    \end{split}
+  \end{equation*}
+
+  \begin{equation*}
+    \begin{split}
+    \text{Gradient: }$\nabla f\\
+    \text{Divergence: }\nabla\cdot f\\
+    \text{Curl: }\nabla\times f\\
+    \end{split}
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \begin{split}
+      \int_C P\,dx + Q\,dy + R\,dz =\\
+      \int_C (P\cdot x'(t) + Q\cdot y'(t) + R\cdot z'(t))\,dt
+    \end{split}
+  \end{equation*}
+
+  \begin{equation*}
+    \begin{split}
+      \text{If conservative: }\int_C \overline{F}\cdot d\overline{r}&=f(B)-f(A)\\
+      \text{Where }\overline{F}&=\nabla f\\
+      \text{Cons. if: curl}(\overline{F})&=0
+    \end{split}
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \begin{split}
+      \text{Green's Theorem:}\\
+      \int_{\delta R}\overline{F}\,d\overline{r}=\iint_R Q_x-P_y\,dA\\
+    \end{split}
+  \end{equation*}
+
+  \begin{equation*}
+    \begin{split}
+      \text{Flux: }\iint_{D(u,v)}V(\overline{r}(u,v))\cdot(\overline{r}_u\times\overline{r}_v)\,du\,dv\\
+      \overline{n}=\dfrac{\overline{r}_u\times\overline{r}_v}{|\overline{r}_u\times\overline{r}_v|}
+    \end{split}
+  \end{equation*}
+
+\end{multicols}
+
+\vspace{-30pt}
+
+\begin{multicols}{2}
+
+  \begin{equation*}
+    \begin{split}
+      \text{Divergence Theorem:}\\
+      \iint_{\delta E}(\overline{F}\cdot\overline{n})\,dS=\iiint_E\text{div}(\overline{F})\,dV\\
+    \end{split}
+  \end{equation*}
+
+  \begin{equation*}
+    \begin{split}
+    \text{Stokes'}& \text{ Theorem:}\\
+      \int_{\delta M}\overline{F}\,d\overline{r}&=\iint_M(\text{curl}(\overline{F})\cdot\overline{n})\,dS\\
+      &=\iint_M(Q_x-P_y)\,dA
+    \end{split}
+  \end{equation*}
+
+\end{multicols}
+
+\end{document}
+
