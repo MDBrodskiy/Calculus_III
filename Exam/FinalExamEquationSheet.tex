@@ -109,7 +109,7 @@ citecolor=blue,
   \end{equation*}
     
   \begin{equation*}
-    \dfrac{df}{dt}=\dfrac{\delta f}{\delta x}\dfrac{dx}{dt} + \dfrac{\delta f}{\delta y}\dfrac{dy}{dt} + \cdots = \nabla f\cdot\frac{d\overline{x}}{dt}
+    \dfrac{df}{dt}=\dfrac{\partial f}{\partial x}\dfrac{dx}{dt} + \dfrac{\partial f}{\partial y}\dfrac{dy}{dt} + \cdots = \nabla f\cdot\frac{d\overline{x}}{dt}
   \end{equation*}
 
 \end{multicols}
@@ -206,7 +206,7 @@ citecolor=blue,
   \begin{equation*}
     \begin{split}
       \text{Green's Theorem:}\\
-      \int_{\delta R}\overline{F}\,d\overline{r}=\iint_R Q_x-P_y\,dA\\
+      \int_{\partial R}\overline{F}\,d\overline{r}=\iint_R Q_x-P_y\,dA\\
     \end{split}
   \end{equation*}
 
@@ -225,15 +225,14 @@ citecolor=blue,
   \begin{equation*}
     \begin{split}
       \text{Divergence Theorem:}\\
-      \iint_{\delta E}(\overline{F}\cdot\overline{n})\,dS=\iiint_E\text{div}(\overline{F})\,dV\\
+      \iint_{\partial E}(\overline{F}\cdot\overline{n})\,dS=\iiint_E\text{div}(\overline{F})\,dV\\
     \end{split}
   \end{equation*}
 
   \begin{equation*}
     \begin{split}
     \text{Stokes'}& \text{ Theorem:}\\
-      \int_{\delta M}\overline{F}\,d\overline{r}&=\iint_M(\text{curl}(\overline{F})\cdot\overline{n})\,dS\\
-      &=\iint_M(Q_x-P_y)\,dA
+      \int_{\partial M}\overline{F}\,d\overline{r}&=\iint_M(\text{curl}(\overline{F})\cdot\overline{n})\,dS\\
     \end{split}
   \end{equation*}
 
